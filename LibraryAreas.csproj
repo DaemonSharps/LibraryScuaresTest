@@ -43,12 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Polygons.cs" />
-    <Compile Include="Classes\Shapes.cs" />
-    <Compile Include="Interfaces\IArea.cs" />
-    <Compile Include="Interfaces\IPolygons.cs" />
-    <Compile Include="Interfaces\IShapes.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="AreaLibrary.cs" />
+    <Compile Include="Example.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
