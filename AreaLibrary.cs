@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Security.Principal;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LibraryAreas
 {
@@ -12,7 +6,7 @@ namespace LibraryAreas
     {
         public delegate void ShowAr(double Area);
         private ShowAr _show=null;
-        private double Area { get; set; }
+        public double Area { get; set; }
         private double Radius { get; set; }
         private double side1 { get; set; }
         private double side2 { get; set; }
@@ -23,10 +17,13 @@ namespace LibraryAreas
             _show(Area);
         }
         public void RegDelegate(ShowAr show) // add your metod how to show Area with this function
-        {
-            _show = show;
+        {  
+                _show = show;
+             
+           
+            
         }
-        private double CircleArea(double R)
+        public double CircleArea(double R)
         {
             double A = Math.PI * Math.Pow(R, 2);
             return A;
@@ -70,7 +67,7 @@ namespace LibraryAreas
         {
            
                 double A1 = sideCount * Math.Pow(side, 2);
-                double A2 = 4 * Math.Tan(Math.PI / 4);
+                double A2 = 4 * Math.Tan(Math.PI / sideCount);
                 double A = A1 / A2;
                 return A;
             

@@ -13,7 +13,7 @@ namespace LibraryAreas
 
             double R = Double.Parse(Console.ReadLine());
             Shape Circle = new Shape(R);
-            Shape Triangle = new Shape(3, 4, 5);
+            Shape Triangle = new Shape(3, 3, 5);
             Shape Square = new Shape(5, 5);
 
             Circle.RegDelegate(Display);
